@@ -1,4 +1,5 @@
 -- Create Bamazon Database --
+
 DROP DATABASE IF EXISTS bamazon_db;
 CREATE DATABASE bamazon_db;
 
@@ -8,10 +9,14 @@ CREATE TABLE products(
     item_id MEDIUMINT AUTO_INCREMENT NOT NULL,
     product_name VARCHAR (100),
     department_name VARCHAR (100),
-    price DECIMAL (4),
+    price DECIMAL (10,2),
     stock_quantity TINYINT DEFAULT 0,
+    number_sold INTEGER (10) DEFAULT 0,
+    revenue DECIMAL (10,2) DEFAULT 0,
     PRIMARY KEY (item_id)
 );
+
+-- Add Products to products table --
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUE ("Blouse", "Women's Clothing", 24.95, 5);
