@@ -16,6 +16,25 @@ CREATE TABLE products(
     PRIMARY KEY (item_id)
 );
 
+CREATE TABLE departments(
+    department_id MEDIUMINT AUTO_INCREMENT NOT NULL,
+    department_name VARCHAR (100),
+    over_head_costs DECIMAL(10,2),
+    revenue DECIMAL (10,2) DEFAULT 0,
+    PRIMARY KEY (department_id)
+);
+
+-- Add Departments to departments table --
+INSERT INTO departments (department_name, over_head_costs)
+VALUE("Women's Clothing", 300);
+INSERT INTO departments (department_name, over_head_costs)
+VALUE("Men's Clothing", 300);
+INSERT INTO departments (department_name, over_head_costs)
+VALUE("Garden", 245);
+INSERT INTO departments (department_name, over_head_costs)
+VALUE("Games", 150);
+
+
 -- Add Products to products table --
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)

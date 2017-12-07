@@ -14,14 +14,14 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
   console.log("\nWelcome to the Bamazon Store!\n");
-  runApp();
+  customerApp();
 });
 
-function runApp(){
+function customerApp(){
     var arr = [];
     connection.query("SELECT * FROM products", function(err,res){
         if (err) throw err;
-        console.log("\nInventory for sale: \n==========================================")
+        console.log("\nInventory for sale: \n==========================================");
         for(var i = 0; i < res.length; i++){
             arr.push("\nItem: " + res[i].product_name +  "\nID: " + res[i].item_id + "\nDepartment: " + res[i].department_name + "\nPrice: $" + res[i].price + "\n\n---------------------------\n");
         }
@@ -52,7 +52,7 @@ function runApp(){
                         {
                             stock_quantity: (res[0].stock_quantity - answers.quantity),
                             number_sold: (res[0].number_sold + parseInt(answers.quantity)),
-                            revenue: (answers.quantity * res[0].price)
+                            revenue: ((parseInt(answers.quantity) + res[0].number_sold) * res[0].price)
                         },
                         {
                            item_id: answers.choice 
@@ -60,7 +60,8 @@ function runApp(){
                     ], 
                     function(err, result){
                         if(err) throw err;
-                        console.log("\nTransaction Completed! \nPurchase Total: $" + (parseInt(answers.quantity) * res[0].price) + "\nEnjoy your new " + res[0].product_name + "!\n");
+                        connection.query("UPDATE departments SET ? WHERE ?", [{revenue: answers.quantity},{department_name:res.department_name}])
+                        console.log("\nTransaction Completed! \nPurchase Total: $" + (parseInt(answers.quantity) * res[0].price).toFixed(2) + "\nEnjoy your new " + res[0].product_name + "!\n");
                         inquirer.prompt([
                         {
                             type : "confirm",
@@ -70,7 +71,7 @@ function runApp(){
                         }
                 ]).then(function(answers){
                     if(answers.tryAgain){
-                        runApp();
+                        customerApp();
                     }
                     else{
                         console.log("\nThank you for stopping by. Come back soon!\n");
@@ -90,7 +91,7 @@ function runApp(){
                         }
                 ]).then(function(answers){
                     if(answers.tryAgain){
-                        runApp();
+                        customerApp();
                     }
                     else{
                         console.log("\nThank you for stopping by. Come back soon!\n");
