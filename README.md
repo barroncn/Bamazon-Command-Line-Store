@@ -13,7 +13,7 @@ Run bamazonCustomer.js in the terminal:
 
 Run bamazonManager.js in the terminal:
 
-4. A manager can request to look at low stock items (note ID 5, 6, 9 from previous mySQL picture each with stock < 5): https://user-images.githubusercontent.com/31671905/33743456-dfcf3cac-db7a-11e7-9a7a-58517b958602.png 
+4. A manager requests to look at low stock items (note ID 5, 6, 9 from previous mySQL picture, with stock < 5): https://user-images.githubusercontent.com/31671905/33743456-dfcf3cac-db7a-11e7-9a7a-58517b958602.png 
 
 5. A manager chooses to add items to existing inventory (10 items added to ID 9): https://user-images.githubusercontent.com/31671905/33743458-e1eb665a-db7a-11e7-93f8-6fc8a279a28c.png
 
