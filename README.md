@@ -1,4 +1,8 @@
-# bamazon
+Bamazon
+
+This is a Node.js command line application that stores store information in a MySQL Database and allows customers to buy in stock items and managers to update and purchase items.
+
+Check it out below!
 
 Photo Walk-through of Customer and Manager Apps:
 
@@ -30,4 +34,9 @@ https://user-images.githubusercontent.com/31671905/33743460-e6275440-db7a-11e7-8
 
 8. mySQL after the new item has been added (ID 21):
 https://user-images.githubusercontent.com/31671905/33743469-e96d7df0-db7a-11e7-98b9-8742a072b869.png
+
+
+Technologies Used: 
+
+Node.js | Inquirer NPM | MySQL
 
