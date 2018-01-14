@@ -38,6 +38,7 @@ Check it out below!
 * mySQL after the new item has been added (ID 21):
 ![https://user-images.githubusercontent.com/31671905/33743469-e96d7df0-db7a-11e7-98b9-8742a072b869.png](https://user-images.githubusercontent.com/31671905/33743469-e96d7df0-db7a-11e7-98b9-8742a072b869.png)
 
+---
 
 **Technologies Used:**
 
