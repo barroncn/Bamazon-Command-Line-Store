@@ -8,7 +8,7 @@ Check it out below!
 
 **Photo Walk-through of Customer and Manager Apps:**
 
-* Run bamazonCustomer.js in the terminal:
+*Run **bamazonCustomer.js** in the terminal:*
 
 1. mySQL database before the customer purchase (Note Pretty Shrubs - ID 11):
 ![https://user-images.githubusercontent.com/31671905/33743338-64d96cde-db7a-11e7-9349-a1f439c29221.png](https://user-images.githubusercontent.com/31671905/33743338-64d96cde-db7a-11e7-9349-a1f439c29221.png)
@@ -21,7 +21,7 @@ Check it out below!
 
 ---
 
-* Run bamazonManager.js in the terminal:
+*Run **bamazonManager.js** in the terminal:*
 
 4. A manager requests to look at low stock items (note ID 5, 6, 9 from previous mySQL picture, with stock < 5):
 ![https://user-images.githubusercontent.com/31671905/33743456-dfcf3cac-db7a-11e7-9a7a-58517b958602.png](https://user-images.githubusercontent.com/31671905/33743456-dfcf3cac-db7a-11e7-9a7a-58517b958602.png) 
