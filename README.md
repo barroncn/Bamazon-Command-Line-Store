@@ -4,6 +4,8 @@ This is a Node.js command line application that stores store information in a My
 
 Check it out below!
 
+---
+
 **Photo Walk-through of Customer and Manager Apps:**
 
 * Run bamazonCustomer.js in the terminal:
@@ -17,6 +19,7 @@ Check it out below!
 3. mySQL database after the purchase-- stock quantity, number sold, and revenue have been updated (ID 11):
 ![https://user-images.githubusercontent.com/31671905/33743453-de01b256-db7a-11e7-96b5-c8c803133cb6.png](https://user-images.githubusercontent.com/31671905/33743453-de01b256-db7a-11e7-96b5-c8c803133cb6.png)
 
+---
 
 * Run bamazonManager.js in the terminal:
 
