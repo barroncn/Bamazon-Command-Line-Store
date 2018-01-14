@@ -1,4 +1,4 @@
-Bamazon
+# Bamazon
 
 This is a Node.js command line application that stores store information in a MySQL Database and allows customers to buy in stock items and managers to update and purchase items.
 
