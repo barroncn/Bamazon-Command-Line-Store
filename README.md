@@ -9,8 +9,10 @@ Photo Walk-through of Customer and Manager Apps:
 Run bamazonCustomer.js in the terminal:
 
 
+![Optional alternative text if image doesn't load](http://www.sampleurl.com/logo.png)
+
 1. mySQL database before the customer purchase (Note Pretty Shrubs - ID 11):
-(https://user-images.githubusercontent.com/31671905/33743338-64d96cde-db7a-11e7-9349-a1f439c29221.png)
+![https://user-images.githubusercontent.com/31671905/33743338-64d96cde-db7a-11e7-9349-a1f439c29221.png](https://user-images.githubusercontent.com/31671905/33743338-64d96cde-db7a-11e7-9349-a1f439c29221.png)
 
 2. Customer makes the purchase of 3 "Pretty Shrubs":
 https://user-images.githubusercontent.com/31671905/33743397-a79c3bd2-db7a-11e7-89ea-0a89cf0532b1.png
